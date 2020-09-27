@@ -7,7 +7,7 @@ Function Join-Hashtable {
     [cmdletbinding()]
     param(
         [Parameter(
-            Mandatory, Position = 0, HelpMessage = "Base Hashtable")]
+            Mandatory, ValueFromPipeline, Position = 0, HelpMessage = "Base Hashtable")]
         [hashtable]$BaseHash,
 
         [Parameter(
