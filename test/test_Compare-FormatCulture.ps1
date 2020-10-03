@@ -42,3 +42,13 @@ $finalSamples | Compare-FormatCulture -CultureList 'de-DE'
 
 Label 'Compare-FormatCulture' 'de-DE, "n"'
 $finalSamples | Compare-FormatCulture -CultureList 'de-DE' -FormatString 'n'
+
+h1 'dates'
+(Get-Date) | Compare-FormatCulture -CultureList 'de-DE', 'en-US' -FormatString 'm'
+(Get-Date) | Compare-FormatCulture -CultureList 'de-DE', 'en-US' -FormatString 'd'
+(Get-Date) | ConvertTo-Culture -CultureName 'de-DE' -FormatString 'd'
+
+h1 '!!! bug !!!'
+(Get-Date) | Compare-FormatCulture -CultureList 'de-DE' -FormatString 'd' | ForEach-Object Result
+(Get-Date) | ConvertTo-Culture -CultureName 'de-DE' -FormatString 'd'
+Out-Default

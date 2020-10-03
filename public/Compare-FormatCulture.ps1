@@ -52,7 +52,7 @@
                 $meta = [ordered]@{
                     Culture = (Get-Culture $curCult).Name
                     Input   = $curObject
-                    Result  = $curObject | ConvertTo-Culture -CultureName $curCult
+                    Result  = $curObject | ConvertTo-Culture -CultureName $curCult -FormatString $FormatString
                 }
                 $FinalResult.Add(
                     ([pscustomobject]$meta)

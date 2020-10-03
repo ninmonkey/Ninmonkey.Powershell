@@ -45,7 +45,7 @@ function ConvertTo-Culture {
         if ($CultureInstance.count -lt 1) {
             throw "No cultures found"
         }
-        if (! $FormatString ) {
+        if ([string]::IsNullOrWhiteSpace($FormatString) ) {
             $InputObject.ToString( $CultureInstance )
         } else {
             $InputObject.ToString( $FormatString, $CultureInstance )
