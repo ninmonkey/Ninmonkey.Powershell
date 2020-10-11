@@ -2,7 +2,7 @@
 # $Env:UserProfile:\Documents\PowerShell\Modules\Indented.Net.IP\6.1.0
 
 $private = @(
-    # 'ConvertToNetwork'
+    'data_Get-FormatString'
 )
 
 foreach ($file in $private) {
@@ -13,6 +13,7 @@ $public = @(
     'Join-Hashtable'
     'Compare-FormatCulture'
     'ConvertTo-Culture'
+    'Get-FormatString'
 )
 
 foreach ($file in $public) {
@@ -23,5 +24,6 @@ $functionsToExport = @(
     'Join-Hashtable'
     'Compare-FormatCulture'
     'ConvertTo-Culture'
+    'Get-FormatString'
 )
 Export-ModuleMember -Function $functionsToExport
