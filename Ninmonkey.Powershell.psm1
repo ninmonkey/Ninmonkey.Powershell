@@ -12,6 +12,7 @@ foreach ($file in $private) {
 $public = @(
     'Join-Hashtable'
     'Compare-FormatCulture'
+    'Get-ItemType'
     'ConvertTo-Culture'
     'Get-FormatString'
 )
@@ -23,6 +24,7 @@ foreach ($file in $public) {
 $functionsToExport = @(
     'Join-Hashtable'
     'Compare-FormatCulture'
+    'Get-ItemType'
     'ConvertTo-Culture'
     'Get-FormatString'
 )
