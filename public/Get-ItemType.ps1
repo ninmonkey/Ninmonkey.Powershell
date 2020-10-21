@@ -14,6 +14,7 @@ function Get-ItemType {
     .NOTES
         todo:
 
+        - [ ] autocomplete filetypes
         - [  ] files in '.git/*' return a type as 'no extension'
         - [  ] detect types based on current path
         - [  ] -PassThru -ListTypes
